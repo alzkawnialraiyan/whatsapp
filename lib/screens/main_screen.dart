@@ -21,7 +21,6 @@ class _MainScreenState extends State<MainScreen> {
     ChatsScreen()
   ];
 
-  // int index = 0;
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/models/chats_details.dart';
+import 'package:whatsapp/screens/chat_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -60,6 +61,10 @@ class _HomeScreenState extends State<HomeScreen> {
           return Card(
             elevation: 0,
             child: ListTile(
+              onTap: () {
+                Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ChatsScreen(),));
+              },
               leading: CircleAvatar(backgroundImage: NetworkImage(chatsUser[index].image!),
               radius: 30,),
               title: Text(chatsUser[index].name!, style: TextStyle(
