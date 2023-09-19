@@ -31,7 +31,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
       ),
       body: Stack(
         children:[ 
-          SingleChildScrollView(
+          const SingleChildScrollView(
           child: Column(
             children: [
               SizedBox(
@@ -134,7 +134,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
                 onSend: (_) => print(_),
                 actions: [
                   InkWell(
-                    child: Icon(
+                    child: const Icon(
                       Icons.add,
                       color: Colors.black,
                       size: 24,
@@ -142,9 +142,9 @@ class _ChatsScreenState extends State<ChatsScreen> {
                     onTap: () {},
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 8, right: 8),
+                    padding: const EdgeInsets.only(left: 8, right: 8),
                     child: InkWell(
-                      child: Icon(
+                      child: const Icon(
                         Icons.camera_alt,
                         color: Colors.green,
                         size: 24,
